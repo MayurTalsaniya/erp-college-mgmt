@@ -1,0 +1,38 @@
+1) Install Python (check if installed or not: python --version)
+
+2) Create a Virtual Environment:
+	Navigate to your project folder: cd path/to/your/project
+	Create venv: python -m venv envname
+
+3) Activate the Virtual Environment
+	env\Scripts\activate
+	To deactivate the venv (when you're done): deactivate
+
+4) Install Django 
+	pip install django
+	[pip install -r requirements.txt (if requirements.txt file is there)]
+
+5) Configure Database (if needed, in settings.py)
+
+6) Apply Migrations
+	python manage.py makemigrations
+	python manage.py migrate
+
+7) Run
+	python manage.py runserver
+
+
+
+For project:
+admin:- admin
+pass:- admin
+mail:- admin@gmail.com
+
+student:
+mayurtalsaniya@hotmail.com12345678
+
+staff:
+harsh@gardi.com
+12345678
+
+cf7790a9f3f59605a65771a43ade5e50
