@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -162,9 +163,13 @@ EMAIL_FILE_PATH=os.path.join(BASE_DIR,"sent_mails")
 #Enable Only Making Project Live on Heroku
 #STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-import dj_database_url
-prod_db=dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
+
+#prod_db=dj_database_url.config(conn_max_age=500)
+#DATABASES['default'].update(prod_db)
+
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+
+
 
 
 #added by me
