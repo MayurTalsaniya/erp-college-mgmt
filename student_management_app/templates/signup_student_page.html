@@ -31,14 +31,7 @@
 
       <form action="/do_signup_student" method="post" id="demo-form" enctype="multipart/form-data">
       {% csrf_token %}
-        <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email" name="email">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
-          </div>
-        </div>
+
               <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="First Name" name="first_name">
           <div class="input-group-append">
@@ -49,6 +42,14 @@
         </div>
               <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Last name" name="last_name">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" name="email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
